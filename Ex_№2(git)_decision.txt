@@ -1,0 +1,211 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер: GitBash: git clone https://github.com/OSA85/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”: GitBash: touch new.json
+
+ 7. Добавить файл под гит: GitBash: git add new.json после этого можно проверить добавление git status
+
+ 8. Закоммитить файл: GitBash: git commit -m "added new.json"
+
+ 9. Отправить файл на внешний GitHub репозиторий: GitBash: git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+GitBash: cat >> new.json
+{
+"firstName":"Сергей",
+"lastName":"Обидин",
+"age":36,
+"countPets":1,
+"futureSalaryInDollars":10000
+}
+Ctrl + C
+
+ 11. Отправить изменения на внешний репозиторий: GitBash: git commit -am "added new info in new.json"
+						 GitBash: git push
+
+ 12. Создать файл preferences.json : GitBash: touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+GitBash: cat >> preferences.json
+{
+"faivoriteMovie":"Rocky",
+"faivoriteTvShow":"Matchmakers",
+"favoriteFood":"barbecue",
+"favoriteSeason":"summer",
+"countryToVisit":"Italy"
+}
+
+Ctrl + C
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+GitBash: cat >> skills.json
+{
+"SoftSkills":["Переговоры",
+"Креативность",
+"Способность учиться",
+"Командная работа"
+],
+"hardSkills":[
+"Postman",
+"Charles",
+"Fiddler",
+"Jmeter"
+]
+}
+
+Ctrl + C
+
+ 15. Отправить сразу 2 файла на внешний репозиторий: GitBash: git add .
+						     GitBash: git commit -am "added two new files"
+						     GitBash: git push
+
+ 16. На веб интерфейсе создать файл bug_report.json: в удаленном репозитории выбрать "Add file" и затем из появляющегося списка выбрать "Create new file"
+                                                     заполнить имя "bug_report.json"
+						     
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе: затем нажать кнопку "Commit new file"
+ 
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON: открыть файл для редактирования
+{
+        "ID": "A1",
+        "Title": "При увеличении высоты виджета, на чистом экране телефона до размера большего чем 4 ячейки, высота отображается некорректно",
+        "Project": "AndroidGridTest",
+        "STR": [
+                "1. Зайти в приложение",
+                "2. Нажать добавить виджет",
+		"3. Выйти из приложения",
+		"4. Перенести виджет на чистый экран",
+		"5. Увеличить его высоту до 4 ячеек"
+        ],
+        "Enviroment":
+        {
+                "OS": "Samsung galaxy S 20 FE (SM-G780G/DSM), Android 12(One UI 4.1), v.G780GXXU3CVC2"
+        },
+        "Actual result": "Высота виджета отображается не корректно",
+        "Expected result": "Высота виджета отображается корректно, согласно ТЗ",
+        "Severity": "Trivial",
+        "Priority": "Low",
+        "Status": "Open",
+        "Author": "Обидин Сергей",
+        "Attachments": "ссылка_на_картинку_или_видео_с_багом"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе: "Commit changes"
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON: GitBash: git pull
+
+Ссылка на репозиторий: https://github.com/OSA85/JSON
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер: GitBash: git clone https://github.com/OSA85/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”: GitBash: touch new.xml
+
+ 24. Добавить файл под гит: GitBash: git add new.xml после этого можно проверить добавление git status
+
+ 25. Закоммитить файл: GitBash: git commit -m "added new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий: GitBash: git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ GitBash: cat >> new.xml
+<file>
+	<title>new.xml</title>
+		<firstName>Сергей</firstName>
+		<lastName>Обидин</lastName>
+		<age>36</age>
+		<countPets>1</countPets>
+		<futureSalaryInDollars>10000</futureSalaryInDollars>
+</file>
+
+Ctrl + C
+
+ 28. Отправить изменения на внешний репозиторий: : GitBash: git add new.xml
+						   GitBash: git commit -m "added new info in new.xml"
+						   GitBash: git push
+
+ 29. Создать файл preferences.xml: GitBash: touch preferences.xml
+ 
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ GitBash: cat >> preferences.xml
+<file>
+	<title>preferences.xml</title>
+		<faivoriteMovie>Rocky</faivoriteMovie>
+		<faivoriteTvShow>Matchmakers</faivoriteTvShow>
+		<favoriteFood>barbecue</favoriteFood>
+		<favoriteSeason>summer</favoriteSeason>
+		<countryToVisit>Italy</countryToVisit>
+</file>
+
+Ctrl + C
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ GitBash: cat > skills.xml
+<file>
+	<title>skills.xml</title>
+		<softSkills>
+			<SoftSkill>Переговоры</SoftSkill>
+			<SoftSkill>Креативность</SoftSkill>
+			<SoftSkill>Способность учиться</SoftSkill>
+			<SoftSkill>Командная работа</SoftSkill>
+		</softSkills>
+		<hardSkills>
+			<hardSkill>Postman</hardSkill>
+			<hardSkill>Charles</hardSkill>
+			<hardSkill>Fiddler</hardSkill>
+			<hardSkill>Jmeter</hardSkill>
+		</hardSkills>
+</file>
+
+Ctrl + C
+
+ 32. Сделать коммит в одну строку: GitBash: 	git add .
+						git commit -am "added two new files"
+				   
+ 33. Отправить сразу 2 файла на внешний репозиторий: GitBash: git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml: в удаленном репозитории выбрать "Add file" и затем из появляющегося списка выбрать "Create new file"
+                                                     заполнить имя "bug_report.xml"
+						     
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе: затем нажать кнопку "Commit new file"
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML: открыть файл для редактирования
+<file>
+  <title>bug_report.xml</title>
+  <ID>A1</ID>
+  <Title>При увеличении высоты виджета, на чистом экране телефона до размера большего чем 4 ячейки, высота отображается некорректно</Title>
+  <Project>AndroidGridTest</Project>
+  <Steps>
+    <Step>1. Зайти в приложение</Step>
+    <Step>2. Нажать добавить виджет</Step>
+    <Step>3. Выйти из приложения</Step>
+    <Step>4. Перенести виджет на чистый экран</Step>
+    <Step>5. Увеличить его высоту до 4 ячеек</Step>
+  </Steps>
+  <Enviroment>Samsung galaxy S 20 FE (SM-G780G/DSM), Android 12(One UI 4.1), v.G780GXXU3CVC2</Enviroment>
+  <Actual result>Высота виджета отображается не корректно</Actual result>
+  <Expected result>Высота виджета отображается корректно, согласно ТЗ</Expected result>
+  <Severity>Trivial</Severity>
+  <Priority>Low</Priority>
+  <Status>Open</Status>
+  <Author>Обидин Сергей</Author>
+  <Attachments>ссылка_на_картинку_или_видео_с_багом</Attachments>
+</file>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе: "Commit changes"
+
+ 38. Синхронизировать внешний и локальный репозиторий XML: GitBash: git pull
+
+Ссылка на репозиторий: https://github.com/OSA85/XML

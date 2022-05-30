@@ -51,8 +51,10 @@ TXT
  Ctrl + C
 
  12. Сделать коммит в одну строку:
- GitBash: git add .
- GitBash: git commit -am "added two new files"
+ GitBash: git add . && git commit -m "added two new files"
+или
+ git add . | git commit -m "added two new files"
+
 
  13. Отправить сразу 2 файла на внешний репозиторий:
  GitBash: git push
